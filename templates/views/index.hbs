@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerlinks}}
+</head>
+<body>
+  
+  {{>navbar}}
+
+   <!-- main header -->
+<div class= "container-fluid main_header">
+    <div class="row">
+        <div class = "col-md-10 col-12 mx-auto">
+            <div class="row">
+                <!-- left side div -->
+                <div class="col-md-6 col-12 main_header_left">
+                    <p>Welcome to Weather app</p>
+                    <h2>Get the latest <span class= "text_clr">Weather</span> Info of your city</h2>
+                    <a href="/weather"><button>Check now</button></a>
+                </div>
+                <!-- right side div -->
+                <div class="col-md-6 col-12 main_header_right">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/logo1.jpg" class=" w-100" alt="1">
+                          </div>
+                      
+                        </div>
+                        {{!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="" aria-hidden="true"></span>
+                          <span class="visually-hidden"></span>
+                        </button>
+                        <button class="" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> --}}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- footer code -->
+ {{>footer}}
+</body>
+</html>
